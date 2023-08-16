@@ -1,0 +1,18 @@
+.navbar-collapse
+{
+  
+        margin-left: 89px;
+        margin-right: 89px;
+    
+}
+
+#site-search{
+    width: 150px;
+  }
+  
+  button.searching{
+    background-color: transparent;
+    border: transparent;
+    padding-top: 8px;
+  }
+  
