@@ -1,20 +1,237 @@
-.content-div{
-    background-color: #DCC1AB;
+.content-div {
+  background-color: #DCC1AB;
 }
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; 
-  }
-  
-  .custom-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-  }
-.row{
-margin-left: 0px;
-margin-right: 0px;
-  }
 
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.custom-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.navbar-collapse {
+
+  margin-left: 89px;
+  margin-right: 89px;
+
+}
+
+#site-search {
+  width: 150px;
+}
+
+button.searching {
+  background-color: transparent;
+  border: transparent;
+  padding-top: 8px;
+}
+
+#ofertaSection {
+  background-color: #F5F0EC;
+  text-align: center;
+}
+
+
+h1{
+  font-weight: 500;
+  font-size: 60px;
+  word-break: break-word;
+
+}
+h2{
+  font-weight: 500;
+  font-size: 16px;
+padding-top: 50px;
+}
+.left-container{
+    max-width: 500px;
+    min-height: 488px;
+    margin-top: 144px;
+}
+h3{
+font-weight: 500;
+font-size: 48px;
+word-break: break-word;
+}
+.oferta-content{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  padding-top: 100px;
+}
+.card{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 28px;
+  padding: 20px 40px 20px 40px;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+margin-top: 30px;
+}
+.card:hover{
+  background-color: #1B5B31;
+  color: #fff;
+
+}
+.card:hover .more {
+  color: #fff;
+}
+.card:hover img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(48deg) brightness(102%) contrast(101%);
+
+}
+.card img{
+  width: 44px;
+  height: 44px;
+  margin-top: 20px;
+}
+h4{
+  text-align: left;
+  font-size: 28px;
+  padding-top: 20px;
+}
+p{
+  font-size: 14px;
+  text-align: left;
+}
+.cards{
+  margin-top: 50px;
+  padding-bottom: 130px;
+  
+}
+.oferta-content h2{
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 700px;
+  padding-top: 20px;
+}
+.more{
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: left;
+text-decoration: underline;
+  border: none;
+  background-color: transparent;
+  color: #1B5B31;
+}
+.ofirmie{
+  background-color: #1B5B31;
+}
+.ofirmie-content{
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+}
+.ofirmie-content h5{
+color: #fff;
+font-size: 48px;
+font-weight: 500;
+}
+.ofirmie-content p{
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+  margin-top: 100px;
+}
+.meet{
+  margin-top: 100px;
+  background-color: transparent;
+  border-radius: 200px;
+  font-size: 16px;
+  padding: 10px 20px 10px 20px;
+  border-color: #fff;
+  color: #fff;
+  transition: background-color 0.4s, color 0.3s;
+
+}
+.meet:hover{
+  background-color: #fff;
+  color: #1B5B31;
+}
+.realizacje{
+background-color: #DCC1AB;
+}
+.realizacje h3{
+  padding-top: 150px;
+    padding-left: 150px;
+}
+.kontakt{
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+.insta{
+  background-color: #1B5B31;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 358px;
+}
+
+.left-insta p{
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  padding-left: 30px;
+}
+.right-insta p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  max-width: 180px;
+}
+.right-insta, .left-insta{
+  padding-top: 100px;
+}
+.instagram{
+  background-color: #fff;
+  border-color: transparent;
+  color: #1B5B31;
+  font-size: 16px;
+  border-radius: 200px;
+  padding: 10px 20px 10px 20px;
+}
+.footer{
+  background-color: #111111;
+}
+.footer img{
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(48deg) brightness(102%) contrast(101%);
+
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.button-kontakt{
+  background-color: #1B5B31;
+  color: #fff;
+  border-radius: 100px;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 10px;
+}
+.button-realizacje{
+  padding: 10px 20px 10px 20px;
+  border-radius: 100px;
+background-color: transparent;
+color: #1B5B31;
+border: 1px solid #1B5B31;
+margin-bottom: 10px;
+
+}

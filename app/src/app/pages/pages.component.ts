@@ -6,19 +6,12 @@ import { Component, ElementRef, OnInit } from '@angular/core';
   styleUrls: ['./pages.component.css']
 })
 export class PagesComponent implements OnInit {
-  isMenuOpen: boolean = false;
-  isSearchOpen: boolean = false; 
+
 
   constructor() { }
 
   ngOnInit(): void { }
 
-  toggleMenu(): void {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
 
-  openSearch(): void {
-    this.isSearchOpen = !this.isSearchOpen;
-  }
 
 }

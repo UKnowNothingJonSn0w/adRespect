@@ -1,11 +1,125 @@
-<div class="row">
-    <div class="col-lg-6 content-div">
-      dupadupa
-    </div>
-    <div class="col-lg-6 p-0">
-      <div class="image-container">
-        <img src="assets/Photo1.png" alt="logo-giarddesign" class="custom-image">
+<nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" (click)="toggleMenu()" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" [ngbCollapse]="!isMenuOpen">
+    <ul class="navbar-nav">
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo-giarddesign">
       </div>
+    </ul>
+    <div class="ml-auto">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll('#ofertaSection')">Oferta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll('#ofirmieSection')">O firmie</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll('#realizacjeSection')">Realizacje</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="scroll('#kontaktSection')">Kontakt</a>
+        </li>
+        <li class="nav-item search-icon">
+          <div class="search-wrapper">
+            <button class="searching" (click)="openSearch()">
+              <i class="fas fa-search"></i>
+            </button>
+            <input *ngIf="isSearchOpen" type="search" id="site-search" name="q" />
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
-  
+</nav>
+<ngb-carousel>
+  <ng-template ngbSlide *ngFor="let slide of slides">
+    <div class="row">
+      <div class="col-lg-6 content-div">
+        <div class="left-container ml-auto mr-auto">
+          <h1>Nowoczesna aranżacja
+            Twojego ogrodu </h1>
+          <h2>Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres
+            usług z indywidualnym podejściem do każdego projektu.</h2>
+          <div class="buttons">
+            <button class="button-kontakt">Skontaktuj się z nami </button>
+            <button class="button-realizacje" (click)="scroll('#realizacjeSection')">Zobacz nasze realizacje <i
+                class="fas fa-arrow-down"></i> </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0">
+        <div class="image-container">
+          <img src="assets/Photo1.png" alt="garden" class="custom-image">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+<div class="oferta" id="ofertaSection">
+  <div class="oferta-content">
+    <h3>Działamy <em>kompleksowo</em></h3>
+    <h2>Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz
+      rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy
+      radą i wieloletnim doświadczeniem. </h2>
+  </div>
+  <div class="row cards">
+    <div class="col-lg-3 col-sm-8 card">
+      <img src="assets/i-pencil.png" alt="pencil icon">
+      <h4>Projekty</h4>
+      <p>
+        Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.
+      </p>
+      <button class="more">Dowiedz się wiecej <i class="fas fa-arrow-right"></i> </button>
+    </div>
+    <div class="col-lg-3 col-sm-8 card">
+      <img src="assets/i-eye.png" alt="eye icon">
+      <h4> Wizualizacje</h4>
+      <p>Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+      <button class="more">Dowiedz się wiecej <i class="fas fa-arrow-right"></i> </button>
+    </div>
+    <div class="col-lg-3 col-sm-8 card">
+      <img src="assets/i-stars.png" alt="stars icon">
+      <h4> Realizacje </h4>
+      <p>Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+      <button class="more">Dowiedz się wiecej <i class="fas fa-arrow-right"></i> </button>
+
+    </div>
+  </div>
+</div>
+<div class="row ofirmie" id="ofirmieSection">
+  <div class="col-lg-6 p-0">
+    <img src="assets/Photo2.png" alt="logo-giarddesign" class="custom-image">
+  </div>
+  <div class="col-lg-6 p-0 ofirmie-content">
+    <h5>Tworzymy z <em>pasją</em></h5>
+    <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których
+      zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne,
+      które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do
+      współczesnego trybu życia.</p>
+    <button class="meet">Poznaj nas bliżej <i class="fas fa-arrow-right"></i> </button>
+  </div>
+</div>
+<div class="realizacje" id="realizacjeSection">
+  <h3>Nasze <em>projekty</em></h3>
+
+</div>
+<div class="kontakt" id="kontaktSection">
+  <div class="row insta">
+    <div class="col-lg-8 col-sm-10 left-insta">
+      <p>Zostańmy w kontakcie!</p>
+      <p> Znajdziesz nas na <em> Instagramie. </em></p>
+    </div>
+    <div class="col-lg-3 ml-auto col-sm-10 right-insta">
+      <p>Śledź nasze najnowsze realizacje!</p>
+      <button class="instagram">Instagram </button>
+
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <img src="assets/logo.png" alt="logo-giarddesign">
+</div>
