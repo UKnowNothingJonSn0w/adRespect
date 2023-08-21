@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgxMasonryModule } from 'ngx-masonry';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule, 
     ReactiveFormsModule,
     NgbModule,
-
+    NgxMasonryModule
   ],
 
   bootstrap: [PagesComponent],

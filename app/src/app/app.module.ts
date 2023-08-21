@@ -7,7 +7,8 @@ import { PagesModule } from './pages/pages.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { LightboxModule } from 'ngx-lightbox';
+//import { NgxMasonryModule } from 'ngx-masonry';
 
 @NgModule({
   imports: [
@@ -19,6 +20,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgbModule,
+   // NgxMasonryModule,
+    LightboxModule
+
   ],
   declarations: [AppComponent],
   bootstrap: [AppComponent],

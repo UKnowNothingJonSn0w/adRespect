@@ -105,7 +105,17 @@
 </div>
 <div class="realizacje" id="realizacjeSection">
   <h3>Nasze <em>projekty</em></h3>
-
+  <ngx-masonry>
+    <div class="image-container-gallery" *ngFor="let image of displayedImages; let i = index">
+      <img [src]="image.thumb" (click)="open(i)" alt="Thumbnail">
+    </div>
+  </ngx-masonry>
+  <div class="expand-button">
+    <button class="button-rozwin" (click)="toggleImageDisplay()" >
+      {{ showAllImages ? 'Zwiń' : 'Rozwiń' }}
+      <i class="fas fa-arrow-down"></i>
+    </button>
+  </div>
 </div>
 <div class="kontakt" id="kontaktSection">
   <div class="row insta">
@@ -121,5 +131,28 @@
   </div>
 </div>
 <div class="footer">
+  <div class="footer-box">
   <img src="assets/logo.png" alt="logo-giarddesign">
+  <div class="footer-box2">
+  <p>Daj znać co możemy dla Ciebie zrobić!</p>
+  <button class="button-kontakt">Skontaktuj się z nami </button>
+</div>
+</div>
+<div class="footer-media">
+  <p>Kontakt</p>
+  <p>Instagram</p>
+  <p>Facebook</p>
+  <p>LinkedIn</p>
+  <div class="footer-contact ml-auto">
+    <p>000-000-000</p>
+    <p>giarddesign@kontakt.pl</p>
+  </div>
+</div>
+<div class="rights">
+  <p mr-auto>Prawa zastrzeżone © 2022</p>
+  <div class="footer-logo ml-auto">
+    <p >made by</p>
+    <img src="assets/logo-ar.png" alt="logo-adrespect" width="113px" height="23px">
+  </div>
+</div>
 </div>

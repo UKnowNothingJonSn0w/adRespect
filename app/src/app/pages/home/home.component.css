@@ -140,6 +140,7 @@ text-decoration: underline;
 color: #fff;
 font-size: 48px;
 font-weight: 500;
+word-wrap: break-word;
 }
 .ofirmie-content p{
   font-size: 16px;
@@ -165,13 +166,14 @@ font-weight: 500;
 .realizacje{
 background-color: #DCC1AB;
 }
+
 .realizacje h3{
   padding-top: 150px;
-    padding-left: 150px;
 }
 .kontakt{
   background-color: #fff;
   margin-bottom: 100px;
+  margin-top: 50px;
 }
 .insta{
   background-color: #1B5B31;
@@ -179,6 +181,7 @@ background-color: #DCC1AB;
   margin-left: auto;
   margin-right: auto;
   min-height: 358px;
+  padding-bottom: 30px;
 }
 
 .left-insta p{
@@ -186,6 +189,7 @@ background-color: #DCC1AB;
   font-size: 40px;
   font-weight: 400;
   padding-left: 30px;
+  word-break: break-all;
 }
 .right-insta p{
   font-size: 16px;
@@ -207,7 +211,7 @@ background-color: #DCC1AB;
 .footer{
   background-color: #111111;
 }
-.footer img{
+.footer-box img{
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(48deg) brightness(102%) contrast(101%);
 
 }
@@ -223,8 +227,10 @@ background-color: #DCC1AB;
   color: #fff;
   border-radius: 100px;
   border: none;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 10px 5px 10px;
   margin-bottom: 10px;
+  width: 208px;
+  height: 50px;
 }
 .button-realizacje{
   padding: 10px 20px 10px 20px;
@@ -234,4 +240,104 @@ color: #1B5B31;
 border: 1px solid #1B5B31;
 margin-bottom: 10px;
 
+}
+.footer-box img{
+  width: 115px;
+  height: 19px;
+  margin-top: 15px;
+}
+.footer-box{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  border-bottom: solid 1px #fff;
+  padding-bottom: 50px;
+}
+.footer-box2{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-box2 p{
+  color: #fff;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+.footer-media{
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+.footer-media p{
+padding-right: 40px;
+font-weight: 300;
+}
+.footer-contact{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.rights{
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  padding-top: 20px;
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-logo{
+  display: flex;
+}
+.footer-logo p{
+padding-right: 20px;
+}
+ngx-masonry {
+  display: flex;
+  flex-wrap: wrap;
+  position: unset;
+  height: auto!important;
+  margin-top: 50px;
+}
+
+.image-container-gallery {
+  margin: 10px; 
+  flex: 0 0 calc(33.33% - 20px);
+}
+
+.image-container-gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+}
+
+.image-container-gallery img:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); 
+}
+.button-rozwin{
+  border: 1px solid #000;
+  color: #000;
+  font-weight: 300;
+  border-radius: 100px;
+  padding: 5px 10px 5px 10px;
+  background-color: transparent;
+
+}
+.expand-button{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
